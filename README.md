@@ -19,13 +19,13 @@ Include client side:
 	```
 	
 -  Create elements:
-	*
+	* Chat frame with messages
 	```html
-	<div class="chatFrame" id="chatFrame"></div> - chat frame with messages
+	<div class="chatFrame" id="chatFrame"></div>
 	```
-	*
+	* Input element
 	```html
-	<div class="chatControl" id="chatControl"> - input element
+	<div class="chatControl" id="chatControl">
 		<div class="inputZone" id="inputZone">
 		<span><input type="text" size="30" id="messageText" placeholder="Enter to send..." maxlength="55" onkeypress="sendMessage(event)"></input></span>
 		</div>
