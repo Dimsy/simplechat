@@ -11,23 +11,23 @@ Starting server side:
 Include client side:
 
 - 	On you page:
-	'''html
+	```html
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="your/path/to/socket.io.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="chat.js"></script>
-	'''
+	```
 	
 -  Create elements:
-	2.1) '''html
+	2.1) ```html
 	<div class="chatFrame" id="chatFrame"></div> - chat frame with messages
-	'''
-	2.2) '''html
+	```
+	2.2) ```html
 	<div class="chatControl" id="chatControl"> - input element
 			<div class="inputZone" id="inputZone">
 			<span><input type="text" size="30" id="messageText" placeholder="Enter to send..." maxlength="55" onkeypress="sendMessage(event)"></input></span>
 			</div>
 		</div>
-		'''
+		```
 		
 // Message element created by SimpleChat is .chatMessage in CSS 
