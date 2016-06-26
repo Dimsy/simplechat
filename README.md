@@ -1,6 +1,8 @@
 # simplechat
 Simple chat on Node.js (server module + client script)
 
+-You can test it [here](http://198.199.90.88/)
+
 Starting server side:
 
 - Install Nodejs (sudo apt-get update, sudo apt-get install nodejs)
