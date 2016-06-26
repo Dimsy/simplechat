@@ -19,11 +19,11 @@ Include client side:
 	```
 	
 -  Create elements:
-	2.1) 
+	*
 	```html
 	<div class="chatFrame" id="chatFrame"></div> - chat frame with messages
 	```
-	2.2) 
+	*
 	```html
 	<div class="chatControl" id="chatControl"> - input element
 		<div class="inputZone" id="inputZone">
@@ -32,4 +32,4 @@ Include client side:
 	</div>
 	```
 		
-// Message element created by SimpleChat is .chatMessage in CSS 
+- Message element created by SimpleChat is .chatMessage in CSS 
