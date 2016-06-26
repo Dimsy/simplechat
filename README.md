@@ -19,15 +19,17 @@ Include client side:
 	```
 	
 -  Create elements:
-	2.1) ```html
+	2.1) 
+	```html
 	<div class="chatFrame" id="chatFrame"></div> - chat frame with messages
 	```
-	2.2) ```html
+	2.2) 
+	```html
 	<div class="chatControl" id="chatControl"> - input element
-			<div class="inputZone" id="inputZone">
-			<span><input type="text" size="30" id="messageText" placeholder="Enter to send..." maxlength="55" onkeypress="sendMessage(event)"></input></span>
-			</div>
+		<div class="inputZone" id="inputZone">
+		<span><input type="text" size="30" id="messageText" placeholder="Enter to send..." maxlength="55" onkeypress="sendMessage(event)"></input></span>
 		</div>
-		```
+	</div>
+	```
 		
 // Message element created by SimpleChat is .chatMessage in CSS 
