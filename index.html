@@ -1,0 +1,27 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="/node_modules/socket.io/node_modules/socket.io-client/socket.io.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="chat.js"></script>
+</head>
+<body class="bg">
+
+
+
+<div class="chatElement">	
+	<div class="chatFrame" id="chatFrame">
+	</div>
+	
+	<div class="chatControl" id="chatControl">
+
+		<div class="inputZone" id="inputZone">
+			<span><input type="text" size="30" id="messageText" placeholder="Enter to send..." maxlength="55" onkeypress="sendMessage(event)"></input></span>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
