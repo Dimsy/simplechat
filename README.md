@@ -7,10 +7,11 @@ Starting server side:
 
 - Install Nodejs (sudo apt-get update, sudo apt-get install nodejs)
 - Copy server.js on your server
-- Cd to server.js dir and start server.js (nohup node server.js)
+- Cd to server.js dir and install socket.io (sudo apt-get install npm, npm install socket.io)
+- Start server.js (nohup node server.js)
 - Rejoice!
 
-Include client side:
+Including client side:
 
 - 	On you page:
 	```html
