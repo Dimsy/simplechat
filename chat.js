@@ -22,7 +22,7 @@ var socket = io.connect('http://198.199.90.88:8081/');
 		messcount++;
 	});
 	
-	function sendMessage(e)
+document.onkeydown = function sendMessage(e)
 	{
 		if (e.keyCode == 13) {
 			var send_mess=document.getElementById('messageText');	
