@@ -28,7 +28,7 @@ Including client side:
 	```
 	* Input element
 	```html
-	<div class="chatControl" id="chatControl">
+	<div class="chatControl">
 		<div class="inputZone" id="inputZone">
 		<span><input type="text" size="30" id="messageText" placeholder="Enter to send..." maxlength="55"></input></span>
 		</div>
