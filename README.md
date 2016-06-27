@@ -30,7 +30,7 @@ Including client side:
 	```html
 	<div class="chatControl" id="chatControl">
 		<div class="inputZone" id="inputZone">
-		<span><input type="text" size="30" id="messageText" placeholder="Enter to send..." maxlength="55" onkeypress="sendMessage(event)"></input></span>
+		<span><input type="text" size="30" id="messageText" placeholder="Enter to send..." maxlength="55"></input></span>
 		</div>
 	</div>
 	```
