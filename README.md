@@ -28,11 +28,7 @@ Including client side:
 	```
 	* Input element
 	```html
-	<div class="chatControl">
-		<div class="inputZone" id="inputZone">
-		<span><input type="text" size="30" id="messageText" placeholder="Enter to send..." maxlength="55"></input></span>
-		</div>
-	</div>
+	<input type="text" size="30" id="messageText" placeholder="Enter to send..." maxlength="55"></input>
 	```
 		
 - Message element created by SimpleChat is .chatMessage in CSS 

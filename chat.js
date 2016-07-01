@@ -26,8 +26,11 @@ document.onkeydown = function sendMessage(e)
 	{
 		if (e.keyCode == 13) {
 			var send_mess=document.getElementById('messageText');	
-			socket.emit('message',name+": "+send_mess.value);
-			send_mess.value='';
+			if (send_mess.value!='')
+			{
+				socket.emit('message',name+": "+send_mess.value);
+				send_mess.value='';
+			}
 		}
 	}
 	
