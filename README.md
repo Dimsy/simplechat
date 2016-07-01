@@ -11,6 +11,11 @@ Starting server side:
 - Start server.js (nohup node server.js)
 - Rejoice!
 
+- If you want to keep chat logs start server with 
+	```
+	nohup node server.js &>> messages.log
+	```
+
 Including client side:
 
 - 	On you page:
@@ -36,7 +41,3 @@ Including client side:
 	```
 		
 - Message element created by SimpleChat is .chatMessage in CSS 
-- If you want to keep chat logs start server with 
-	```
-	nohup node server.js &>> messages.log
-	```
