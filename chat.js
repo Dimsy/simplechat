@@ -40,4 +40,5 @@ document.onkeydown = function sendMessage(e)
 	
 window.onload = function() {
   document.getElementById("messageText").focus();
+  document.getElementById("nickname").placeholder="Name#"+name;
 };
