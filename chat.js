@@ -28,6 +28,10 @@ document.onkeydown = function sendMessage(e)
 			var send_mess=document.getElementById('messageText');	
 			if (send_mess.value!='')
 			{
+				if (document.getElementById('nickname').value!='')
+				{
+				name = document.getElementById('nickname').value;
+				}
 				socket.emit('message',name+": "+send_mess.value);
 				send_mess.value='';
 			}

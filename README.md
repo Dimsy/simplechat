@@ -26,6 +26,10 @@ Including client side:
 	```html
 	<div class="chatFrame" id="chatFrame"></div>
 	```
+	* Nickname element
+	```html
+	<input type="text" id="nickname" placeholder="Nickname"></input>
+	```
 	* Input element
 	```html
 	<input type="text" size="30" id="messageText" placeholder="Enter to send..." maxlength="55"></input>
