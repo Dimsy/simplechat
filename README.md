@@ -36,3 +36,7 @@ Including client side:
 	```
 		
 - Message element created by SimpleChat is .chatMessage in CSS 
+- If you want to keep chat logs start server with 
+	```html
+	nohup node server.js &>> messages.log
+	```
