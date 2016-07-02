@@ -31,6 +31,11 @@ Including client side:
 	```html
 	<div class="chatFrame" id="chatFrame"></div>
 	```
+	* Online users counter
+	```html
+	<div id="online"></div>
+	```
+
 	* Nickname element
 	```html
 	<input type="text" id="nickname" placeholder="Nickname"></input>
