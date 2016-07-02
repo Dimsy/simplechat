@@ -6,10 +6,16 @@ var socket = io.connect('http://198.199.90.88:8081/');
 		socket.emit('hello','#'+name);
 		messcount++;
 	});
-		
+	
+	socket.on('pplCount', function (data)
+	{
+		var online = document.getElementById('online');
+		online.innerHTML = "Online: "+data;
+		console.log(data);
+	});
+	
 	socket.on('message', function (data)
 	{
-		console.log(messcount);
 		if (messcount > 20)
 		{
 			$('#chatFrame').find('div').first().remove();
@@ -41,4 +47,8 @@ document.onkeydown = function sendMessage(e)
 window.onload = function() {
   document.getElementById("messageText").focus();
   document.getElementById("nickname").placeholder="Name#"+name;
+};
+
+window.onbeforeunload = function(){
+   socket.emit('quit',name);
 };

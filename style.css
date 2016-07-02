@@ -50,19 +50,29 @@
 }
 
 .inputZone
-{	float: right;
+
+{	
+	display:inline-block;
+	float: right;
     height: 100%;
-    width: 78%;
+    width: 60%;
 	padding: 2px;
 
-	
-	
+}
+
+.online
+{	
+	float: left;
+    height: 100%;
+    width: 15%;
+
+
 }
 
 .nickname
 {
 	display:inline-block;
-    float: left;
+    float: right;
     height: 100%;
     width: 20%;
 	padding: 2px;
