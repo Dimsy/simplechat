@@ -49,36 +49,33 @@
 	/*border-bottom: solid 1px;*/
 }
 
-.inputZone
-
-{	
-	display:inline-block;
-	float: right;
-    height: 100%;
-    width: 60%;
-	padding: 2px;
-
+.sections {
+  display:table;
+  width: calc(100% - 2px);
 }
 
-.online
-{	
-	float: left;
-    height: 100%;
-    width: 15%;
-
-
+.nickname {
+	width: 20%;
+	display: table-cell;
+	vertical-align:middle;
+	padding-left:4px;
 }
 
-.nickname
-{
-	display:inline-block;
-    float: right;
-    height: 100%;
-    width: 20%;
-	padding: 2px;
-
-	
+.inputZone {
+	width: 60%;
+	display: table-cell;
+	vertical-align:middle;		
+	padding: 3px;
 }
+
+.online {
+	width: 20%;
+	display: table-cell;
+	vertical-align:middle;	
+	padding: 3px 0;
+	text-align: center;
+}
+
 
 input {
     width: 100%;
