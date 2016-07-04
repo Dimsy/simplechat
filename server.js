@@ -1,7 +1,7 @@
 var io = require('socket.io').listen(8081);
 io.sockets.on('connection', function (socket) {
 	socket.on('hello', function (data){
-		pplCount = io.engine.clientsCount;
+		pplCount = io.engine.clientsCount-1;
 		socket.broadcast.send('Connected: '+data);
 		io.sockets.emit('pplCount', pplCount);
 		console.log(data);
@@ -9,7 +9,7 @@ io.sockets.on('connection', function (socket) {
 	
 	socket.on('disconnect', function(data) {
 		
-		pplCount = io.engine.clientsCount;
+		pplCount = io.engine.clientsCount-1;
 		io.sockets.emit('pplCount', pplCount);
 	});
 	
