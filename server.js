@@ -1,15 +1,15 @@
 var io = require('socket.io').listen(8081);
-var pplCount = 0;
 io.sockets.on('connection', function (socket) {
 	socket.on('hello', function (data){
-		pplCount++;
+		pplCount = io.engine.clientsCount;
 		socket.broadcast.send('Connected: '+data);
 		io.sockets.emit('pplCount', pplCount);
 		console.log(data);
 	});
 	
 	socket.on('disconnect', function(data) {
-		pplCount--;
+		
+		pplCount = io.engine.clientsCount;
 		io.sockets.emit('pplCount', pplCount);
 	});
 	
