@@ -16,9 +16,19 @@ var socket = io.connect('http://198.199.90.88:8081/');
 	
 	socket.on('message', function (data)
 	{
-		if (messcount > 20)
+		var allmess = $('#chatFrame').find('div');
+		var messElemHeight = document.getElementById("chatFrame").offsetHeight;
+		console.log("fr hgt: "+ messElemHeight);
+		var messheight = 16;
+		
+		for (i=0;i<=allmess.length-1;i++)
+		{
+			messheight += allmess[i].offsetHeight;
+		}
+		if (messheight > messElemHeight)
 		{
 			$('#chatFrame').find('div').first().remove();
+
 		}
 		var new_mess = document.createElement('div');
 		new_mess.className = "chatMessage";

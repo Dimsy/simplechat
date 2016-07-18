@@ -16,7 +16,6 @@
          -o-animation: fadein 7s; /* Opera < 12.1 */
             animation: fadein 7s;
 }
-
 .chatFrame
 {
     position: relative;
